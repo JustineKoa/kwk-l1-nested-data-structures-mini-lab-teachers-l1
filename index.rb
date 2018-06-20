@@ -54,4 +54,5 @@ def city_populations(cities)
   cities.each do |city|
     total_pop += city[:population].to_i
   end
+  return total_pop
 end
