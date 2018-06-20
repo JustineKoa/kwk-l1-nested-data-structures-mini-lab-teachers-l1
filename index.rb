@@ -15,9 +15,11 @@ def sandwich_request(ingredients, order)
         if list == item
           found = true
         end
+      end
+    end
     if !found
       return false
-    end 
+    end
   return true
 end
 
