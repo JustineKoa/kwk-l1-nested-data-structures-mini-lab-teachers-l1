@@ -48,6 +48,8 @@ cities = {
   }
 }
 
+puts cities[:new_york][:population]
+
 def city_populations(cities)
   # your code here!
   total_pop = 0
