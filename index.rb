@@ -48,13 +48,12 @@ cities = {
   }
 }
 
-puts cities[:new_york][:population]
-
 def city_populations(cities)
   # your code here!
   total_pop = 0
   cities.each do |city|
-    total_pop += city[:population].to_i
+    pop = city[:population]
+    total_pop += pop
   end
   return total_pop
 end
