@@ -20,6 +20,7 @@ def sandwich_request(ingredients, order)
     if !found
       return false
     end
+  end
   return true
 end
 
