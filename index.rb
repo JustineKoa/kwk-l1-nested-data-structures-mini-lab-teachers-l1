@@ -6,7 +6,7 @@ ingredients = [
     ["mayo", "mustard", "tabasco"]
 ]
 
-def sandwich_request(ingredients, order) 
+def sandwich_request(ingredients, order)
   # your code here!
   order.each do |item|
     found = false
@@ -14,29 +14,31 @@ def sandwich_request(ingredients, order)
       lists.each do |list|
         if list == item
           found = true
+        end
     if !found
       return false
-  return true  
+    end 
+  return true
 end
 
 # example city_info hash
 cities = {
-  :new_york => { 
+  :new_york => {
     :mayor => "Bill DeBlasio",
     :population => 8337000,
     :website => "http://www.nyc.gov"
   },
-  :los_angeles => { 
+  :los_angeles => {
     :mayor => "Eric Garcetti",
     :population => 3884307,
     :website => "http://www.lacity.org"
   },
-  :miami => { 
+  :miami => {
     :mayor => "Tomás Regalado",
     :population => 419777,
     :website => "http://www.miamigov.com"
   },
-  :chicago => { 
+  :chicago => {
     :mayor => "Rahm Emanuel",
     :population => 2695598,
     :website => "http://www.cityofchicago.org/"
